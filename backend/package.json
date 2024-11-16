@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@poker-planner/types": "file:../packages/types",
     "@types/express": "^5.0.0",
     "@types/socket.io": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^8.14.0",

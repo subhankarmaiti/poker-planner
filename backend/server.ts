@@ -1,16 +1,7 @@
 import express from 'express';
 import { Server, Socket } from 'socket.io';
+import {Player, Vote} from '@poker-planner/types'
 import http from 'http';
-
-interface Player {
-  id: string;
-  name: string;
-}
-
-interface Vote {
-  playerId: string;
-  value: number;
-}
 
 const app = express();
 const server = http.createServer(app);
