@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts"
@@ -18,9 +18,11 @@
     "@types/socket.io": "^3.0.2",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
+    "cors": "^2.8.5",
     "eslint": "^9.15.0",
     "express": "^4.21.1",
     "socket.io": "^4.8.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.3"
   },
   "devDependencies": {
